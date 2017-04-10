@@ -22,8 +22,8 @@
 			vm.addItem = function(valid){
                 if(valid){
                 	var todo = new Todo(vm.todo.name);
-				    vm.data = API.newItem(todo);            // 
-				    vm.item = {};                          // clears it out, overwritting object with blank
+				    vm.data = API.newItem(todo);             
+				    vm.todo.name = '';                          // clears it out, overwritting object with blank
                 }
                 else {
                     alert("Form incomplete. Please complete all required fields.");
@@ -54,6 +54,6 @@
 			vm.checkAll = function(){
 				vm.data = API.checkAll();
 			}
-			
+
         });
 })();

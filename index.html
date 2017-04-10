@@ -26,7 +26,7 @@
 
                 <li ng-repeat="item in vm.data track by $index"> <!-- to loop thru --> 
                     <article ng-class="{'completed':item.status}">
-                        <button ng-click="vm.checkItem(item)" class="check"><img src="http://www.boylesoftware.com/blog/wp-content/uploads/2015/04/checkmark.png"</button>
+                        <button data-ng-init="" ng-click="vm.checkItem(item)" class="check"><img src="http://www.boylesoftware.com/blog/wp-content/uploads/2015/04/checkmark.png"</button>
                         <p>{{item.name}}</p>
                         <button ng-click="vm.deleteItem(item)" class="delete">X</button>
                     </article>
